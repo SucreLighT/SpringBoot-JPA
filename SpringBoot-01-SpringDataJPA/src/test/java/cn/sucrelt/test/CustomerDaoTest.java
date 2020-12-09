@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -51,4 +52,12 @@ public class CustomerDaoTest {
             System.out.println(customer);
         }
     }
+
+    @Test
+    @Transactional
+    public void  testGetOne() {
+        Customer customer = customerDao.getOne(4l);
+        System.out.println(customer);
+    }
+
 }
