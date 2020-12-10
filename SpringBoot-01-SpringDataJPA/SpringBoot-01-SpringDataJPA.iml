@@ -7,6 +7,7 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="SpringBoot-01-SpringDataJPA" />
+          <factory-entry name="entityManagerFactoty" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>
